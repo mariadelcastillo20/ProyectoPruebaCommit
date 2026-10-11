@@ -5,6 +5,12 @@ public class PruebaCommit {
 	public static void main(String[] args) {
 		
 		System.out.println("Probando segundo commit");
+		
+		System.out.println("Probando recorrer array");
+		int[] numeros = {2, 5, 8, 10};
+		for (int n : numeros) {
+		    System.out.println(n);
+		}
 	}
 	
 }
