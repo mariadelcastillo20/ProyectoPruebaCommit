@@ -11,6 +11,13 @@ public class PruebaCommit {
 		for (int n : numeros) {
 		    System.out.println(n);
 		}
+		
+		System.out.println("Probando recorrer string");
+		String p = "prueba";
+		for (int i=0; i<p.length(); i++){
+			System.out.print(p.charAt(i));
+		}
+		
 	}
 	
 }
