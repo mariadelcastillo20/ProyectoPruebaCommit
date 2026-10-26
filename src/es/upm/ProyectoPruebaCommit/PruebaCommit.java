@@ -12,6 +12,14 @@ public class PruebaCommit {
 		    System.out.println(n);
 		}
 		
+		int mayor = numeros[0];
+		for (int n : numeros) {
+		    if (n > mayor) {
+		        mayor = n;
+		    }
+		}
+		System.out.println("El numero mayor es: " + mayor);
+		
 		System.out.println("Probando recorrer string");
 		String p = "prueba";
 		for (int i=0; i<p.length(); i++){
