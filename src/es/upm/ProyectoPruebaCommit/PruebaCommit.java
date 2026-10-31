@@ -26,6 +26,13 @@ public class PruebaCommit {
 			System.out.print(p.charAt(i));
 		}
 		
+		System.out.println(factorial(4));
+	
+	}
+	
+	public static int factorial(int n) {
+	    if (n == 0) return 1; // Caso base
+	    return n * factorial(n - 1); // Llamada recursiva
 	}
 	
 }
