@@ -35,4 +35,11 @@ public class PruebaCommit {
 	    return n * factorial(n - 1); // Llamada recursiva
 	}
 	
+	public static int sumar(int n) {
+	    if (n == 0) {
+	        return 0;
+	    }
+	    return n + sumar(n - 1);
+	}
+	
 }
