@@ -27,6 +27,7 @@ public class PruebaCommit {
 		}
 		
 		System.out.println(factorial(4));
+		System.out.println(sumar(5));
 	
 	}
 	
@@ -41,5 +42,4 @@ public class PruebaCommit {
 	    }
 	    return n + sumar(n - 1);
 	}
-	
 }
