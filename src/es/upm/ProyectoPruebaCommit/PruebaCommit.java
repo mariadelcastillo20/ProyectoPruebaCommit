@@ -29,6 +29,8 @@ public class PruebaCommit {
 		System.out.println(factorial(4));
 		System.out.println(sumar(5));
 	
+		int pos = busquedaBinaria(numeros, 8);
+		System.out.println("Posicion del 8: " + pos);
 	}
 	
 	public static int factorial(int n) {
@@ -41,5 +43,18 @@ public class PruebaCommit {
 	        return 0;
 	    }
 	    return n + sumar(n - 1);
+	}
+	
+	public static int busquedaBinaria(int[] a, int x) {
+	    int izq = 0, der = a.length - 1;
+
+	    while (izq <= der) {
+	        int medio = (izq + der) / 2;
+
+	        if (a[medio] == x) return medio;
+	        if (a[medio] < x) izq = medio + 1;
+	        else der = medio - 1;
+	    }
+	    return -1;
 	}
 }
